@@ -1,0 +1,32 @@
+        fill: #000;
+        fill: #00a;
+        fill: #08f;
+        fill: #0c5;
+        fill: #333;
+        fill: #640;
+        fill: #777;
+        fill: #800;
+        fill: #af6;
+        fill: #afe;
+        fill: #bbb;
+        fill: #c4c;
+        fill: #d85;
+        fill: #ee7;
+        fill: #f77;
+        fill: #fff;
+
+
+                Looking at the hex colors, they are sorted **alphabetically/lexicographically** by their hex value (from `#000` to `#fff`).
+
+        Beyond that, they appear to represent a **diverse palette** covering:
+        - Blacks/darks: `#000`, `#333`
+        - Blues: `#00a`, `#08f`
+        - Greens: `#0c5`, `#af6`, `#afe`
+        - Browns/oranges: `#640`, `#d85`
+        - Grays: `#777`, `#bbb`
+        - Red/dark red: `#800`, `#f77`
+        - Purple: `#c4c`
+        - Yellow: `#ee7`
+        - White: `#fff`
+
+        No obvious mathematical pattern in the values themselves — it looks like a **hand-picked set of distinct colors** sorted by hex value.
