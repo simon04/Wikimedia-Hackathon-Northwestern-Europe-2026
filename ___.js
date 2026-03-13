@@ -1,0 +1,62 @@
+const e = document,
+  t = e.body;
+((t.innerHTML = 'CLICK ME'),
+  (e.onclick = () => {
+    ((t.style =
+      'background:black; font-size:400px; display:flex; justify-content:center; align-items:center; height:100vh; margin:0; padding:0; overflow: hidden;'),
+      (t.innerHTML = '\u{1F410}'));
+    let e = 0;
+    !(function n() {
+      (e++,
+        (t.style.background = `hsl(${e % 360},70%,60%)`),
+        (t.style.transform = `rotate(${e % 360}deg) scale(${1 + ((e / 100) % 1.5)})`),
+        requestAnimationFrame(n));
+    })();
+    const n = 103.83,
+      o = 116.54,
+      i = 130.81,
+      c = 138.59,
+      r = 155.56,
+      s = 174.61,
+      a = [
+        [o, 4],
+        [i, 4],
+        [c, 4],
+        [o, 4],
+        [s, 2],
+        [s, 2],
+        [r, 1],
+        [n, 4],
+        [o, 4],
+        [i, 4],
+        [n, 4],
+        [r, 2],
+        [r, 2],
+        [c, 1],
+        [o, 4],
+        [i, 4],
+        [c, 4],
+        [o, 4],
+        [c, 2],
+        [r, 2],
+        [i, 4],
+        [o, 4],
+        [n, 2],
+        [r, 2],
+        [c, 1]
+      ],
+      l = new AudioContext();
+    let d = 0;
+    !(function e() {
+      let t = 2 * a[d][0],
+        n = 1e3 / a[d][1],
+        o = l.createOscillator();
+      ((o.type = 'sawtooth'),
+        (o.frequency.value = t),
+        o.connect(l.destination),
+        o.start(),
+        o.stop(l.currentTime + 0.1),
+        (d = (d + 1) % a.length),
+        setTimeout(e, n));
+    })();
+  }));
